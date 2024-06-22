@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    
+}
+*{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.nav{
+    padding: 24px;
+    font-weight: 500;
+    width: 25.25%;
+    &__logo{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        span{
+            color: #838383;
+            font-size: 10px;
+        }
+    }
+    &__dasboard{
+        display: flex;
+        align-items: center;
+        padding: 11px;
+        gap: 18px;
+    }
+    ul{
+        display: flex;
+        padding-left: 0;
+        list-style: none;
+        flex-direction: column;
+        gap: 18px;
+        
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 11px;
+            div{
+                display: flex;
+                align-items: center;
+                gap: 14px;
+            }
+            
+        }
+        .active{
+            background-color: #5932EA;
+            color: white;
+            border-radius: 8px;
+        }
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img{
+            width: 42px;
+        }
+        h5{
+            margin:0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}
+
+.main{
+    width: 100%;
+    padding-right: 71px;
+    padding-left: 71px;
+    background-color: #fafbff;
+    h1{
+        margin-top: 41px;
+        margin-bottom: 51px;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 40px 40px 40px ;
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 12px;
+        }
+    }
+    &__custumer{
+        width: 100%;
+        background-color: white;
+        border-radius: 30px;
+        box-sizing: border-box;
+        table{
+            width: 100%;
+            padding: 0px 40px;
+            border-collapse: collapse;
+            th{
+                text-align: left;
+                color: #B5B7C0;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            tr{
+                border-bottom: 2px solid #EEEEEE;
+            }
+        }
+    }
+    &__logo{
+        h4{
+            font-size: 22px;
+            margin-bottom: 7px;
+        }
+        p{
+            color: #16C098;
+            margin: 0;
+        }
+    }
+    
+}
